@@ -1815,6 +1815,10 @@ ul {
     text-transform: capitalize;
   }
 
+  .items .head-name {
+    text-align: start;
+  }
+
   .future-text {
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -1863,6 +1867,7 @@ ul {
 
   .our-teamlist {
     display: flex;
+    gap: 24px;
   }
 
   .team-list {
@@ -1871,8 +1876,8 @@ ul {
     margin-bottom: 0;
   }
 
-  .team-list + .team-list {
-    margin-left: 24px;
+  .team-list:nth-child(-n + 2) {
+    margin-bottom: 48px;
   }
 
   .team-list .head-name {
@@ -2737,10 +2742,11 @@ ul {
   .team-list {
     box-shadow: var(--hero-shadow-hover);
     border-radius: 0px 0px 4px 4px;
+    margin-top: 0;
   }
 
-  .team-list + .team-list {
-    margin-left: 24px;
+  .team-list:nth-child(-n + 2) {
+    margin-bottom: 0;
   }
 
   .team-list .head-name {
