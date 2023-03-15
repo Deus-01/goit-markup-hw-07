@@ -1646,7 +1646,7 @@ ul {
   }
 
   .menu-button {
-    margin-left: auto;
+    margin-left: ;
     padding: 0;
     background-color: transparent;
     border: none;
@@ -1655,7 +1655,7 @@ ul {
     width: 32px;
     height: 22px;
     stroke: black;
-    display: block;
+    display: inline-block;
   }
 
   .close-menu {
