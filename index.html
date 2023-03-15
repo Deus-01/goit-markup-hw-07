@@ -27,31 +27,76 @@
       <div class="container head">
         <nav class="nav-head">
           <a class="logo" href="./index.html"
-            ><span class="accent">Web</span>Studio</a
-          >
-          <ul class="site-nav">
-            <li class="nav-style">
-              <a class="link current" href="./index.html">Studio</a>
-            </li>
-            <li class="nav-style">
-              <a class="link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-style"><a class="link" href="">Contacts</a></li>
-          </ul>
+            ><span class="accent">Web</span>Studio
+          </a>
+          <button type="button" class="menu-button" data-menu-open>
+            <svg class="open-menu">
+              <use href="./images/main/icons.svg#icon-openmenu"></use>
+            </svg>
+          </button>
+          <div class="navigation" data-menu>
+            <button type="button" class="closemenu-button" data-menu-close>
+              <svg class="close-menu">
+                <use href="./images/main/icons.svg#icon-closemenu"></use>
+              </svg>
+            </button>
+            <ul class="site-nav">
+              <li class="nav-style">
+                <a class="link current" href="./index.html">Studio</a>
+              </li>
+              <li class="nav-style">
+                <a class="link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-style"><a class="link" href="">Contacts</a></li>
+            </ul>
+
+            <!--CONTACTS-->
+            <address class="address">
+              <ul class="contacts">
+                <li class="call">
+                  <a class="mail-link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="call">
+                  <a class="tel-link" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+              <ul class="menu-socials">
+                <li class="social-list">
+                  <a class="social-links" href=""
+                    ><svg class="social-icons">
+                      <use href="./images/main/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list">
+                  <a class="social-links" href=""
+                    ><svg class="social-icons">
+                      <use href="./images/main/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list">
+                  <a class="social-links" href=""
+                    ><svg class="social-icons">
+                      <use href="./images/main/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list">
+                  <a class="social-links" href=""
+                    ><svg class="social-icons">
+                      <use href="./images/main/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
         </nav>
-        <!--CONTACTS-->
-        <address class="address">
-          <ul class="contacts">
-            <li class="call">
-              <a class="link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="call">
-              <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-            </li>
-          </ul>
-        </address>
       </div>
     </header>
     <!--MAIN SECTION-->
@@ -520,5 +565,6 @@
       </div>
     </main>
     <script src="./modal.js"></script>
+    <script src="./menu.js"></script>
   </body>
 </html>

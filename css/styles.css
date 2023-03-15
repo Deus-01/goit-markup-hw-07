@@ -1607,6 +1607,120 @@ ul {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--bgc);
+
+    padding-top: 80px;
+    padding-left: 40px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+  }
+
+  .navigation.is-open {
+    display: block;
+  }
+
+  .nav-style {
+    margin-bottom: 40px;
+  }
+
+  .link {
+    color: var(--main-color);
+  }
+
+  .nav-head {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    display: flex;
+  }
+
+  .menu-button {
+    margin-left: auto;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+  .open-menu {
+    width: 32px;
+    height: 22px;
+    stroke: black;
+    display: block;
+  }
+
+  .close-menu {
+    width: 8px;
+    height: 8px;
+    display: block;
+  }
+
+  .address {
+    margin-top: 284px;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .mail-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    font-style: normal;
+
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+  }
+
+  .tel-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    font-style: normal;
+
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--accent-color);
+  }
+
+  .call + .call {
+    margin-bottom: 40px;
+  }
+
+  .menu-socials {
+    display: flex;
+    margin-top: 48px;
+    gap: 56px;
+  }
+
+  .menu-socials .social-icons {
+    width: 24px;
+    height: 24px;
+  }
+
+  .closemenu-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    margin-left: auto;
+    padding: 8px;
+    background-color: transparent;
+    border: 1px solid var(--bgcbtnfilter);
+    border-radius: 50%;
+  }
+}
+
 /* --------------------------------Table----------------------------------- */
 
 @media screen and (min-width: 768px) {
@@ -1640,6 +1754,22 @@ ul {
   }
 
   /*--------------------- head */
+
+  .closemenu-button {
+    display: none;
+  }
+  .menu-button {
+    display: none;
+  }
+
+  .menu-socials {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
 
   .header.portf {
     border-bottom: 1px solid var(--bgcbtnfilter);
@@ -1712,6 +1842,18 @@ ul {
   .container.head {
     display: flex;
   }
+  .address {
+    margin-left: 121px;
+  }
+  .contacts {
+    flex-direction: column;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--text-color);
+  }
 
   .contacts a {
     text-decoration: none;
@@ -1719,13 +1861,8 @@ ul {
     font-style: normal;
   }
 
-  .address {
-    display: flex;
-    margin-left: auto;
-  }
-
   .call + .call {
-    margin-left: 40px;
+    margin-left: 0;
   }
 
   /*--------------------- Main */
@@ -2581,9 +2718,13 @@ ul {
     font-style: normal;
   }
 
+  .contacts {
+    flex-direction: row;
+  }
+
   .address {
     display: flex;
-    margin-left: auto;
+    margin-left: 400px;
   }
 
   .call + .call {
